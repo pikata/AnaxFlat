@@ -4,38 +4,32 @@
  *
  */
 return [
-
     // Name of this menu
     "navbarTop" => [
         // Use for styling the menu
         "wrapper" => null,
         "class" => "rm-default rm-desktop",
-
         // Here comes the menu structure
         "items" => [
-
+            "hem" => [
+                "text"  => t("Hem"),
+                "url"   => $this->di->get("url")->create("index"),
+                "title" => t("Hem")
+            ],
             "redovisningar" => [
                 "text"  => t("Redovisning"),
                 "url"   => $this->di->get("url")->create("report"),
                 "title" => t("Reports from kmom assignments"),
                 "mark-if-parent" => true,
             ],
-
             "om" => [
                 "text"  => t("Om"),
                 "url"   => $this->di->get("url")->create("about"),
                 "title" => t("About this website")
             ],
-            "test" => [
-                "text"  => t("Test"),
-                "url"   => $this->di->get("url")->create("test"),
-                "title" => t("Testsida")
-            ],
+
         ],
     ],
-
-
-
 /*
     // Used as menu together with responsive menu
     // Name of this menu
@@ -44,17 +38,14 @@ return [
         "id" => "rm-menu",
         "wrapper" => null,
         "class" => "rm-default rm-mobile",
-
         // Here comes the menu structure
         "items" => [
-
             "report" => [
                 "text"  => t("Report"),
                 "url"   => $this->di->get("url")->create("report"),
                 "title" => t("Reports from kmom assignments"),
                 "mark-if-parent" => true,
             ],
-
             "about" => [
                 "text"  => t("About"),
                 "url"   => $this->di->get("url")->create("about"),
@@ -63,8 +54,6 @@ return [
         ],
     ],
 */
-
-
     /**
      * Callback tracing the current selected menu item base on scriptname
      *
@@ -72,9 +61,6 @@ return [
     "callback" => function ($url) {
         return !strcmp($url, $this->di->get("request")->getCurrentUrl(false));
     },
-
-
-
     /**
      * Callback to check if current page is a decendant of the menuitem,
      * this check applies for those menuitems that has the setting
@@ -85,9 +71,6 @@ return [
         $url = $this->di->get("request")->getCurrentUrl(false);
         return !substr_compare($parent, $url, 0, strlen($parent));
     },
-
-
-
    /**
      * Callback to create the url, if needed, else comment out.
      *

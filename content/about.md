@@ -1,8 +1,10 @@
-Om denna webbplats
+Om denna kurs - **Design**
 ==============================================
 
-Används i kursen: [dbwebb course design](http://dbwebb.se/design).
+![alt text](img/ram.png)
 
-Koden för denna webbplats finns på GitHub: [canax/anax-flat](git@github.com:canax/anax-flat.git).
+Det du nu ser är en webbplats som använt ramverket **Anax Flat** som grund. Denna grund kommer att användas i dbwebb-kursen **Design**. Du kan läsa mer om kursen [här](http://dbwebb.se/design).
+
+Koden för denna webbplats finns på GitHub: [pikata/AnaxFlat](https://github.com/pikata/AnaxFlat).
 
 Denna webbplats är byggd av Pia Isometsä.

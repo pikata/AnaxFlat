@@ -1,4 +1,4 @@
-Copyright &copy; 2017 [Pia Isometsä] (piaiso@dbwebb.se)
+Copyright &copy; 2017 [**Pia Isometsä**](mailto:piis12@student.bth.se)
 
 * [Licens](license)
 * [Cookies](cookies)
